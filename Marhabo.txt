@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ob-havo</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .weather {
+      width: 300px;
+      padding: 30px;
+      text-align: center;
+      color: white;
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 25px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+
+    .weather h1 {
+      margin-bottom: 10px;
+    }
+
+    .icon {
+      font-size: 70px;
+    }
+
+    .temperature {
+      font-size: 55px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .info {
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      background: white;
+      color: #1683e8;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="weather">
+    <h1>Toshkent</h1>
+
+    <div class="icon">☀️</div>
+
+    <div class="temperature" id="temp">28°C</div>
+
+    <div class="info">
+      <div>🌤️ Ochiq havo</div>
+      <div>💧 Namlik: 45%</div>
+      <div>💨 Shamol: 12 km/soat</div>
+    </div>
+
+    <button onclick="yangilash()">Yangilash</button>
+  </div>
+
+  <script>
+    function yangilash() {
+      alert("Ob-havo ma'lumotlari yangilandi!");
+    }
+  </script>
+
+</body>
+</html>
